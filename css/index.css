@@ -1,0 +1,263 @@
+/* Vychozi stylopis */
+/* Zakladni vzhled a typografie  */
+/*
+
+--- Zakladna: normalizace, typografie a barvy ---
+
+*/
+body,
+input,
+textarea,
+select {
+  font: 15px/20px Georgia, serif;
+}
+p,
+ul,
+ol,
+blockquote,
+table,
+iframe {
+  padding-top: 0;
+  margin-top: 0;
+  padding-bottom: 0;
+  margin-bottom: 24px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding-top: 0;
+  margin-top: 0;
+  padding-bottom: 0;
+  margin-bottom: 8px;
+  font-family: Arial, sans-serif;
+  line-height: 1.3;
+  color: #666;
+}
+h2 {
+  margin-top: 32px;
+}
+a img {
+  border: 0;
+}
+a {
+  color: red;
+}
+table {
+  border-collapse: collapse;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+table td,
+table th {
+  font: 12px/18px Arial, sans-serif;
+  text-align: left;
+  padding: 5px;
+  border: 1px solid #ccc;
+}
+/* Pomocne tridy: clearovani atd. */
+/*
+
+--- Helpery ---
+
+*/
+.hide-on-screen {
+  position: absolute;
+  top: -500px;
+}
+/*  UI komponenty */
+/*
+
+--- Paticka webu ---
+
+*/
+@media screen {
+  .foot {
+    margin-top: 48px;
+    clear: both;
+    padding: 16px 30px;
+    background-color: #ccc;
+    color: #999;
+  }
+  .foot p {
+    margin-bottom: 0;
+  }
+}
+/*
+
+--- Fotogalerie ---
+
+*/
+.gallery:before,
+.gallery:after {
+  content: " ";
+  display: table;
+}
+.gallery:after {
+  clear: both;
+}
+.gallery-item {
+  float: left;
+  width: 170px;
+  margin: 0 15px 15px 0;
+}
+.gallery-item img {
+  width: 170px;
+}
+.gallery-item a {
+  margin-bottom: 4px;
+}
+.gallery-item.last {
+  margin-right: 0;
+}
+/*
+
+--- Hlavicka webu ---
+
+*/
+.head {
+  background: url('../../img/sportsmen.png') no-repeat right center;
+  background-size: auto 150%;
+}
+/*
+
+--- Navigace ---
+
+*/
+.nav {
+  margin-bottom: 32px;
+}
+.nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.nav ul:before,
+.nav ul:after {
+  content: " ";
+  display: table;
+}
+.nav ul:after {
+  clear: both;
+}
+/* V tisku nezobrazujeme */
+@media print {
+  .nav {
+    display: none;
+  }
+}
+/* Polozka navigace: zakladna a male displeje */
+.nav-item {
+  display: block;
+  border-bottom: 1px solid #fff;
+  background: black;
+  padding: 16px;
+  text-decoration: none;
+  text-align: center;
+  height: 16px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+b .nav-item,
+.nav-item:hover,
+.nav-item:focus,
+.nav-item:active {
+  font-weight: normal;
+  color: #fff;
+}
+.nav li:last-child .nav-item {
+  border-bottom: none;
+}
+/* Layout pro siroke dipleje */
+.nav li {
+  width: 245px;
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+.nav-item {
+  border-left: 1px solid #fff;
+  border-bottom: none;
+}
+.nav li:first-child .nav-item {
+  border-left: none;
+}
+/*
+
+--- Podobne clanky ---
+
+*/
+.similar-articles {
+  list-style-type: none;
+  margin: 0 0 24px;
+  padding: 0;
+}
+.similar-articles li {
+  margin: 0 0 12px 0;
+  padding: 0;
+}
+.similar-articles h3,
+.similar-articles p {
+  margin: 0;
+  padding: 0;
+}
+/* Odkazy pod clankem */
+/*  
+	<h2 class="similar-articles-link">
+	  <a href="podobne-clanky.html" data-replace="podobne-clanky.html" data-media="(min-width: 600px)">Podobné články</a>
+	</h2>
+*/
+.similar-articles-link {
+  text-align: center;
+}
+/* 
+
+--- Fotogalerie --- 
+
+*/
+.photo a,
+.photo img {
+  display: block;
+}
+/* Layout webu ve sloupeccich */
+@media screen {
+  /*
+
+--- Layout - pro siroke displeje ---
+
+*/
+  /* Sedive pozadi stranky */
+  body {
+    background: #ccc;
+  }
+  /* Layout  */
+  .container {
+    width: 980px;
+    position: relative;
+    margin: 16px auto;
+    background: #fff;
+    box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.5);
+    color: 0px 0px 16px rgba(0, 0, 0, 0.5);
+  }
+  .logo {
+    padding: 30px;
+    margin: 0;
+  }
+  .content {
+    float: left;
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 540px;
+    margin-bottom: 48px;
+  }
+  .side {
+    float: right;
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 320px;
+    margin-bottom: 48px;
+  }
+}
