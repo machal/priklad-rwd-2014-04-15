@@ -29,7 +29,7 @@
   display: block;
   border-bottom: 1px solid #fff;
   background: black;
-  padding: 16px;
+  padding: 16px percentage(16px/@container-width);
   text-decoration: none;
   text-align: center;
   height: 16px;
@@ -54,7 +54,7 @@ b .nav-item,
 /* Layout pro siroke dipleje */
 
 .nav li {
-  width: 245px;
+  width: percentage(245px/@container-width);
   float: left;
   margin: 0;
   padding: 0;
