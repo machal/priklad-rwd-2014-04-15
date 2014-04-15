@@ -111,7 +111,7 @@ a {
 */
 .head {
   background: url('../img/sportsmen.png') no-repeat right center;
-  background-size: auto 150%;
+  background-size: 100% auto;
 }
 /*
 
@@ -176,6 +176,17 @@ b .nav-item,
 }
 .nav li:first-child .nav-item {
   border-left: none;
+}
+.map {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 62.5%;
+}
+.map iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
 }
 /*
 
