@@ -253,7 +253,7 @@ th img {
   text-align: right;
 }
 /* Layout webu ve sloupeccich */
-@media screen {
+@media only screen and (min-width: 768px) {
   /*
 
 --- Layout - pro siroke displeje ---
