@@ -8,4 +8,6 @@ $(document).ready(function(){
 
 	$(".fancybox").fancybox();
 
+  $("[data-append],[data-replace],[data-after],[data-before]").ajaxInclude();
+
 })

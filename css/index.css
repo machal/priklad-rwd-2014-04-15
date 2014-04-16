@@ -182,6 +182,7 @@ b .nav-item,
   width: 100%;
   height: 0;
   padding-bottom: 62.5%;
+  font-size: 25px;
 }
 .map iframe {
   position: absolute;
@@ -225,9 +226,9 @@ b .nav-item,
 .photo img {
   display: block;
 }
-/* 
+/*
 
---- Tabulka --- 
+--- Tabulka ---
 
 */
 table {
@@ -251,6 +252,13 @@ th img {
 }
 .table-order td.points {
   text-align: right;
+}
+@media only screen and (max-width: 320px) {
+  .matches-win,
+  .matches-loose,
+  .matches-draw {
+    display: none;
+  }
 }
 /* Layout webu ve sloupeccich */
 @media only screen and (min-width: 768px) {
